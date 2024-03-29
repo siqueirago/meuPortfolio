@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Júlio Siqueira</title>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 </head>
+
 <body>
 
 <div class="navbar">
@@ -17,8 +17,13 @@
 </div>
 
 <div class="main">
+    
+        
 
     <img class="foto" src="imagens/minha-foto2.png" width="200px"><br>
+    
+    <p id="welcome-message"></p>
+
     <h1 id="sobre">Sobre Mim</h1>
     <div class="paragrafo">
         <p>Olá, meu nome é Júlio Siqueira. Sou estudante de Análise e Desenvolvimento de Sistemas e estou apaixonado por tecnologia. Desde jovem, sempre tive interesse em entender como as coisas funcionam, e essa curiosidade me levou ao mundo da programação.</p>
@@ -87,18 +92,7 @@
     <p>© 2024 Júlio Siqueira</p>
 </div>
 
-<script>
-  const target = document.getElementById("item");
-/* dragenter event fired on the drop target */
-target.addEventListener(
-  "dragenter",
-  (event) => {
-    // prevent default to allow drop
-    event.preventDefault();
-  },
-  false,
-);
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>

@@ -1,10 +1,10 @@
-const target = document.getElementById("item");
-/* dragenter event fired on the drop target */
-target.addEventListener(
-  "dragenter",
-  (event) => {
-    // prevent default to allow drop
-    event.preventDefault();
-  },
-  false,
-);
+var now = new Date();
+var hour = now.getHours();
+var welcomeMessage = document.getElementById('welcome-message');
+if (hour < 12) {
+    welcomeMessage.textContent = "Bom dia!";
+} else if (hour < 18) {
+    welcomeMessage.textContent = "Boa tarde!";
+} else {
+    welcomeMessage.textContent = "Boa noite!";
+}
