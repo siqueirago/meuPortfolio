@@ -7,11 +7,15 @@ body {
     background-color: #333;
     overflow: hidden;
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000; 
+
 }
 .navbar a {
 
     float: left;
-    display: block;
+    display: flex;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -21,8 +25,8 @@ body {
     color: black; }
 
 .main {
+    margin-top: 80px;
     padding:0;
-    margin-top: 16px;
     width: 100%;
     background-color: white;
 
@@ -46,7 +50,13 @@ body {
   padding: 16px;
   text-align: left;
   border-radius: 15px;
+}
 
+.item:hover {
+  background-color: #ddd;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+  
+   
 
 }
 /*p {
@@ -55,7 +65,7 @@ body {
 
 .item {
   background-color: white;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  /*box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);*/
 }
 .item:-moz-drag-over {
   background-color: red;
@@ -80,4 +90,5 @@ body {
 .main, .navbar a {
     animation-name: fadeIn;
     animation-duration: 4s;
+    
   }
